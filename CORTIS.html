@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CORTIS — Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f6ef; /* ivory base */
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #fdfaf4; /* cream */
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    /* Topbar */
+    .topbar {
+      display: flex;
+      align-items: center;
+      background-color: #3c2f2f; /* coklat tua */
+      padding: 10px 20px;
+    }
+    .logo {
+      height: 40px;
+      cursor: pointer;
+    }
+    .title {
+      flex: 1; /* biar ambil ruang tersisa */
+      text-align: center; /* teks rata tengah */
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-image: url('https://ibighit.com/cor/images/profile/banner.jpg');
+    }
+    .content {
+      padding: 30px;
+    }
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 16px;
+      border-bottom: 3px solid #5a3c2a; /* garis coklat panjang */
+      padding-bottom: 8px;
+    }
+    .about p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .member-card {
+      flex: 1 1 calc(50% - 30px);
+      max-width: calc(50% - 30px);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .member-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .member-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .member-card img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+    .member-info {
+      font-size: 16px;
+    }
+    .member-info h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .member-info p {
+      margin: 4px 0 0;
+      color: #666;
+    }
+    @media(max-width: 600px) {
+      .member-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar dengan logo -->
+  <header class="topbar">
+    <a href="#" class="logo-link">
+      <img src="cortis logo.png" alt="CORTIS Logo" class="logo">
+    </a>
+    <div class="title">CORTIS</div>
+  </header>
+
+  <div class="container">
+    <!-- Hero / Banner image -->
+    <div class="hero-image" style="background-image: url('cortis.bg.1.jpg');"></div>
+
+    <div class="content">
+      <!-- About section -->
+      <section class="about">
+        <h2 class="section-title">About CORTIS</h2>
+        <p>
+          CORTIS (MARTIN, JAMES, JUHOON, SEONGHYEON, and KEONHO) is the first boy band in 6 years to debut under BIGHIT MUSIC, the powerhouse label behind iconic global groups like BTS and TOMORROW X TOGETHER. The name CORTIS is an unconventional mix of six letters drawn from the phrase “COLOR OUTSIDE THE LINES,” reflecting their determination to think beyond the boundaries defined by the world.<br><br>
+          True to their name, CORTIS is a crew of self-driven creatives who bring raw authenticity to everything they create, from music and choreography to video content. All five members, still in their teens, draw from personal stories to showcase their inimitable creativity across songwriting, composition, performance, and videography. What sets them apart is their collaborative approach: rather than adhering to fixed roles, they work together as co-creators to bring their collective vision to life.
+        </p>
+      </section>
+
+      <!-- Member section -->
+      <section class="members-section">
+        <h2 class="section-title">Members</h2>
+        <div class="members">
+          <!-- Member 1 -->
+          <div class="member-card">
+            <img src="martin.jpg" alt="Martin">
+            <div class="member-info">
+              <h3>MARTIN</h3>
+              <p>Date of Birth: March 20, 2008</p>
+            </div>
+          </div>
+          <!-- Member 2 -->
+          <div class="member-card">
+            <img src="james.jpg" alt="James">
+            <div class="member-info">
+              <h3>JAMES</h3>
+              <p>Date of Birth: October 14, 2005</p>
+            </div>
+          </div>
+          <!-- Member 3 -->
+          <div class="member-card">
+            <img src="juhoon.jpg" alt="Juhoon">
+            <div class="member-info">
+              <h3>JUHOON</h3>
+              <p>Date of Birth: January 3, 2008</p>
+            </div>
+          </div>
+          <!-- Member 4 -->
+          <div class="member-card">
+            <img src="seonghyeon.jpg" alt="Seonghyeon">
+            <div class="member-info">
+              <h3>SEONGHYEON</h3>
+              <p>Date of Birth: January 13, 2009</p>
+            </div>
+          </div>
+          <!-- Member 5 -->
+          <div class="member-card">
+            <img src="keonho.jpg" alt="Keonho">
+            <div class="member-info">
+              <h3>KEONHO</h3>
+              <p>Date of Birth: February 14, 2009</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script>
+    // Logo klik -> refresh dan scroll ke atas
+    document.querySelector('.logo-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      location.reload();
+    });
+  </script>
+
+</body>
+</html>
